@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS conspiracyblog_db;
-CREATE DATABASE conspiracyblog_db; 
+DROP DATABASE IF EXISTS conspiri_db;
+CREATE DATABASE conspiri_db; 
