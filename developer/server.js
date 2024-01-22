@@ -7,7 +7,7 @@ const sequelize = require('./config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Create the Handlebars.js engine object with custom helper functions
+// Create the Handlebars.js engine object with custom helpers
 const hbs = exphbs.create({});
 
 // Inform Express.js which template engine we're using
