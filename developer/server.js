@@ -5,7 +5,7 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 
 const app = express(); // instantiate the server
-const PORT = process.env.PORT || 3001; 
+const PORT = process.env.PORT || 3002; 
 
 // Create the Handlebars.js engine object with custom helpers
 const hbs = exphbs.create({});
