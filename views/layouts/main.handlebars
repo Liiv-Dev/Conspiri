@@ -6,6 +6,9 @@
         <title>Conspiri</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
     </head>
 
 <body>
@@ -27,11 +30,11 @@
         <div id="navbarBasicExample" class="navbar-menu">
 
             <div class="navbar-start">
-                <a class="navbar-item has-text-white">
+                <a class="navbar-item has-text-white" href="/">
                     Home
                 </a>
 
-                <a class="navbar-item has-text-white">
+                <a class="navbar-item has-text-white" href="/dashboard">
                     Dashboard
                 </a>
 
@@ -57,17 +60,18 @@
 
     <div class="navbar-end">
         <div class="navbar-item">
-            <div class="buttons">
-            <a class="button">
-                <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-                Log in
-            </a>
-            </div>
-            </div>
-        </div>
+
+          <div class="buttons">
+          {{#if logged_in}}
+          <a class="button is-light" id="logout">Log Out</a>
+          {{else}}
+          <a class="button" href="/login" style="background-color: rgb(242, 157, 120)"><strong>Log in</strong></a>
+          <a class="button is-light" href="/signup">Sign up</a>
+        {{/if}}
+      </div>
+
     </div>
+  </div>
 </nav>
 
 <main>
